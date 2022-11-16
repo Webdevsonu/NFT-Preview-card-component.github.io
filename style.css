@@ -1,0 +1,102 @@
+body {
+	background-color: hsl(217, 54%, 11%);
+	color: hsl(0, 0%, 100%);
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: 0.9em;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+main {
+	border: 1px solid none;
+	border-radius: 20px;
+	max-width: 300px;
+	padding: 20px;
+	background-color: hsl(216, 50%, 16%);
+	margin-top: 40px;
+	
+}
+
+section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+main img {
+	border-radius: 10px;
+}
+
+h1:hover {
+	color: hsl(178, 100%, 50%);
+	cursor: pointer;
+	transition: 1s;
+}
+
+.name-creator {
+	text-decoration: none;
+	color: hsl(0, 0%, 100%);
+	transition: 1s;
+}
+
+.name-creator:hover {
+	text-decoration: none;
+	color: hsl(178, 100%, 50%);
+}
+
+.grey-font {
+	color: hsl(215, 51%, 70%);
+}
+
+.green-font {
+	color: hsl(178, 100%, 50%)
+}
+
+.devider {
+	border:0.5px solid hsl(215, 32%, 27%);
+	width: 100%;
+	margin-top: 20px;
+}
+
+footer {
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin-right: 60px;
+}
+
+
+.content-wrapper {
+	position: relative;
+}
+
+.content-wrapper > img {
+	display: block;
+	width: 100%;
+}
+
+.content-wrapper > .content {
+	position: absolute;
+	inset: 0;
+	background: hsla(178, 100%, 50%, 0.4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+}
+.content-wrapper > img,
+.content-wrapper > .content {
+	transition: 200ms ease-in-out;
+}
+
+.content-wrapper > .content.fade {
+	opacity: 0;
+}
+.content-wrapper:hover > .content.fade {
+	opacity: 1;
+	cursor: pointer;
+}
